@@ -39,7 +39,7 @@ public class Percolation {
 
         for(int y = 1; y <= N; y++) {              // dumb API has arrays starting and index 1
             for(int x = 1; x <= N; x++) {
-                if( StdRandom.bernoulli(p) ) this.open(y, x);
+                if( ! StdRandom.bernoulli(p) ) this.open(y, x);
             }
         }
 
